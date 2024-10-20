@@ -7,7 +7,7 @@ interface Props {
 
 export const Rating: React.FC<Props> = ({ className }) => {
   return (
-    <div className="flex items-center gap-2">
+    <div className="flex flex-wrap items-center gap-2">
       <span className="text-[12px] text-[#ACACAC]">5.0</span>
       <div className="flex items-center gap-1 text-[#FFF600]">
         <IoStarSharp />

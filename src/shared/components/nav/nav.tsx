@@ -1,4 +1,4 @@
-import React from "react";
+import { forwardRef } from "react";
 
 import { Container } from "../container";
 
@@ -9,12 +9,13 @@ interface Props {
   className?: string;
 }
 
-export const Nav: React.FC<Props> = ({ className }) => {
+export const Nav = forwardRef<HTMLDivElement, Props>((props, ref) => {
   return (
     <footer
+      ref={ref}
       className={cn(
         "fixed bottom-0 left-0 w-full border-t-[1px] border-t-[#555996] bg-black py-4",
-        className,
+        props.className,
       )}
     >
       <nav>
@@ -24,4 +25,6 @@ export const Nav: React.FC<Props> = ({ className }) => {
       </nav>
     </footer>
   );
-};
+});
+
+Nav.displayName = "Nav";

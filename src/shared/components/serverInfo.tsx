@@ -22,7 +22,7 @@ export const ServerInfo: React.FC<Props> = ({
   return (
     <div
       className={cn(
-        "bg-gradient-to-b from-[#050745] to-[#040F43]/50 py-[8px]",
+        "rounded-[16px] bg-gradient-to-b from-[#050745] to-[#040F43]/50 py-[8px]",
         className,
       )}
     >
@@ -33,14 +33,14 @@ export const ServerInfo: React.FC<Props> = ({
           </h2>
           <div className="mb-[18px]">
             <h3 className="mb-[12px] text-[#CBCACA]">Продавец</h3>
-            <div className="flex justify-between">
+            <div className="flex justify-between gap-1">
               <div className="">
                 <SellerInfo />
                 <Rating />
               </div>
-              <div className="flex gap-1">
-                <Button className="text-[9px]">Написать</Button>
-                <Button variant="secondary" className="text-[9px]">
+              <div className="flex flex-wrap justify-end gap-2">
+                <Button className="w-full text-[9px]">Написать</Button>
+                <Button variant="secondary" className="w-full text-[9px]">
                   Позвонить
                 </Button>
               </div>

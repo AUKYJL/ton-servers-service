@@ -1,3 +1,31 @@
+export interface IEmployee {
+  avatarUrl: string;
+  name: string;
+  desc: string;
+  tgId: string;
+}
+
+export const employeesList: IEmployee[] = [
+  {
+    name: "Михаил",
+    desc: "CEO (Chief Executive Officer) — Я отвечаю за общее управление компанией и принимаю ключевые решения, чтобы обеспечить успешную работу и развитие.",
+    tgId: "@varekha",
+    avatarUrl: "/img/employees/mihail.png",
+  },
+  {
+    name: "Дмитрий",
+    desc: "UX/UI-дизайнер — Я специалист, который создаёт интерфейсы сайтов и мобильных приложений. За UX, и за UI отвечает один специалист, поскольку эти части тесно связаны.",
+    tgId: "@Saitambah",
+    avatarUrl: "/img/employees/dmitry.png",
+  },
+  {
+    name: "Владимир",
+    desc: "Фулстек-разработчик (fullstack developer) — Я специалист, который разрабатывает для сайтов как серверную (бэкенд), так и клиентскую часть (фронтенд). ",
+    tgId: "@AUKYJL",
+    avatarUrl: "/img/employees/vladimir.png",
+  },
+];
+
 export interface IServer {
   title: string;
   imgUrl: string;

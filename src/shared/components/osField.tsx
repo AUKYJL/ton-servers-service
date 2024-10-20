@@ -36,7 +36,7 @@ export const OsField: React.FC<Props> = ({ className }) => {
         <h2 className="mb-[30px] text-[18px] font-medium text-[#DADADB]">
           Программное обеспечение
         </h2>
-        <div className="flex items-center justify-between bg-[#161A28] px-[12px] py-[18px]">
+        <div className="flex items-center justify-between rounded-[16px] bg-[#161A28] px-[12px] py-[18px]">
           <p className="text-[13px] text-[#E8E4E4]">Программное обеспечение</p>
           <div className="w-[50%]">
             <Select>

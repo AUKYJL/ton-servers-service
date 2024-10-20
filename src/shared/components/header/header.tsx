@@ -10,9 +10,10 @@ interface Props {
   className?: string;
 }
 
-export const Header: React.FC<Props> = ({ className }) => {
+const Header = React.forwardRef<HTMLDivElement, Props>(({ className }, ref) => {
   return (
     <header
+      ref={ref}
       className={cn(
         "fixed left-0 top-0 z-50 w-full border-b-[1px] border-b-[#555996] bg-black",
         className,
@@ -26,4 +27,6 @@ export const Header: React.FC<Props> = ({ className }) => {
       </Container>
     </header>
   );
-};
+});
+Header.displayName = "Header";
+export default Header;
