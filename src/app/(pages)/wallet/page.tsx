@@ -12,8 +12,8 @@ export default function WalletPage() {
   const didMount = useDidMount();
   //   const wallet = useTonWallet();
   return didMount ? (
-    <section>
-      <Container>
+    <section className="mt-5">
+      <Container className="flex justify-center">
         <Button variant="secondary" onClick={() => tonConnectUI.openModal()}>
           Подключить кошелек
         </Button>

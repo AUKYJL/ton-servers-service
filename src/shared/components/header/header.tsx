@@ -1,8 +1,8 @@
 import React from "react";
-import { GiHamburgerMenu } from "react-icons/gi";
 
 import { Container } from "../container";
 
+import { Menu } from "./menu";
 import { UserProfileBtn } from "./userProfileBtn";
 import { cn } from "@/lib/utils";
 
@@ -21,9 +21,7 @@ const Header = React.forwardRef<HTMLDivElement, Props>(({ className }, ref) => {
     >
       <Container className="flex items-center justify-between py-[15px]">
         <UserProfileBtn />
-        <div className="flex items-center justify-center">
-          <GiHamburgerMenu size={30} />
-        </div>
+        <Menu />
       </Container>
     </header>
   );

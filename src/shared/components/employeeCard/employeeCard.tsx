@@ -29,7 +29,9 @@ export const EmployeeCard: React.FC<Props> = ({ className, employee }) => {
         <h3 className="mb-1 text-[14px] font-medium text-[#00FFFF]">
           {employee.name}
         </h3>
-        <p className="mb-1 text-[12px] text-[#CBCACA]">{employee.desc}</p>
+        <p className="mb-1 text-[12px] text-[#CBCACA]">
+          {employee.desc.slice(0, 70)} ...
+        </p>
         <span className="self-end text-[12px] text-[#12FF00]">
           {employee.tgId}
         </span>

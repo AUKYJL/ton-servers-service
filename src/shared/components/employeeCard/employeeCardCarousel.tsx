@@ -43,7 +43,7 @@ export const EmployeeCardCarousel: React.FC<Props> = ({ className }) => {
           opts={{ loop: true }}
           plugins={[
             Autoplay({
-              delay: 5000,
+              delay: 10_000,
             }),
           ]}
         >
